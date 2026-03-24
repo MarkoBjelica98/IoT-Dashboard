@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import axios from 'axios';
+import api from '../Services/api';
+// import axios from 'axios';
 
 export default function Register({ onRegisterSuccess }) {
   const [email, setEmail] = useState('');
@@ -15,7 +16,10 @@ export default function Register({ onRegisterSuccess }) {
     setErrorMessage('');
 
     try {
-      await axios.post('/api/auth/register', {
+      console.log('BASE URL:', api.defaults.baseURL);
+      console.log('ENV URL:', import.meta.env.VITE_API_URL);
+
+      await api.post('/api/auth/register', {
         email,
         password,
       });

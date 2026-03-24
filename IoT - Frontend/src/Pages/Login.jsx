@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
+import api from '../Services/api';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login({ onSuccess }) {
@@ -18,7 +19,7 @@ export default function Login({ onSuccess }) {
     setErrorMessage('');
 
     try {
-      const res = await axios.post('/api/auth/login', {
+      const res = await api.post('/api/auth/login', {
         email,
         password,
       });

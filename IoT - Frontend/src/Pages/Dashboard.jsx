@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
+import api from '../Services/api';
 import SensorChart from '../Components/SensorChart';
 
 export default function Dashboard() {
@@ -30,9 +31,9 @@ export default function Dashboard() {
   const fetchDashboardData = async () => {
     try {
       const [profileRes, historyRes, latestRes] = await Promise.all([
-        axios.get('/api/auth/profile', { headers }),
-        axios.get('/api/sensors/history', { headers }),
-        axios.get('/api/sensors/latest', { headers }),
+        api.get('/api/auth/profile', { headers }),
+        api.get('/api/sensors/history', { headers }),
+        api.get('/api/sensors/latest', { headers }),
       ]);
 
       setProfile(profileRes.data.user);
@@ -60,7 +61,7 @@ export default function Dashboard() {
 
   const generateAndRefresh = async () => {
     try {
-      await axios.post('/api/sensors/generate', {}, { headers });
+      await api.post('/api/sensors/generate', {}, { headers });
 
       await fetchDashboardData();
     } catch (err) {
@@ -72,7 +73,7 @@ export default function Dashboard() {
   const handleGenerateBurst = async () => {
     try {
       for (let i = 0; i < 5; i += 1) {
-        await axios.post('/api/sensors/generate', {}, { headers });
+        await api.post('/api/sensors/generate', {}, { headers });
       }
 
       await fetchDashboardData();
@@ -84,7 +85,7 @@ export default function Dashboard() {
 
   const handleClearMyData = async () => {
     try {
-      await axios.delete('/api/sensors/all', {
+      await api.delete('/api/sensors/all', {
         headers,
       });
 
@@ -113,7 +114,7 @@ export default function Dashboard() {
 
     const cleanupInterval = setInterval(async () => {
       try {
-        await axios.delete('/api/sensors/cleanup', {
+        await api.delete('/api/sensors/cleanup', {
           headers,
         });
       } catch (err) {
