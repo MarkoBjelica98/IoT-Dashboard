@@ -1,68 +1,112 @@
-🚀 IoT Dashboard
+# 🚀 IoT Dashboard
+
+[![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-22-green?logo=node.js)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express.js-backend-black?logo=express)](https://expressjs.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-blue?logo=postgresql)](https://www.postgresql.org/)
+[![Vercel](https://img.shields.io/badge/Vercel-deployed-black?logo=vercel)](https://vercel.com/)
+[![Render](https://img.shields.io/badge/Render-backend-purple?logo=render)](https://render.com/)
+
+---
+
+## 🚀 Live Demo
+
+👉 **[View Live App](https://iot-dashboard-seven-zeta.vercel.app/)**
+
+---
+
 Full-stack IoT dashboard application for monitoring, managing, and visualizing device data in real time.
 
-📌 Overview
-IoT Dashboard is a modern web application designed to collect, process, and display data from IoT devices.
+---
+
+## 📌 Overview
+
+IoT Dashboard is a modern web application designed to collect, process, and display data from IoT devices.  
+
 It provides a clean UI for monitoring sensors, managing users, and interacting with real-time data streams.
 
-✨ Features
- 🔐 Authentication system (Register / Login)
- 📊 Real-time dashboard visualization
- 📡 IoT data integration (API-based)
- 👥 User & role management (admin panel)
- ⚡ REST API backend (Express)
- 🎯 Clean and responsive UI (React + Tailwind)
- 🌐 Full-stack deployment (Vercel + Render)
+---
 
-🧠 What I Built & Learned
-  Designed full frontend architecture with React (Vite)
-  Built REST API with Express & PostgreSQL
-  Implemented authentication flow (JWT)
-  Solved real-world issues:
-   -CORS problems in production
-   -API routing & proxy issues
-   -Deployment mismatches (frontend/backend)
-   -Environment variable handling
-  Integrated IoT-style data flow (sensor → API → UI)
+## ✨ Features
 
-🛠️ Tech Stack
-  Frontend
-   React (Vite)
-   Tailwind CSS
-   Axios
-   React Router
- Backend
-  Node.js
-  Express.js
-  PostgreSQL
- Deployment
-  Vercel (Frontend)
-  Render (Backend)
+- 🔐 Authentication system (Register / Login)
+- 📊 Real-time dashboard visualization
+- 📡 IoT data integration (API-based)
+- 👥 User & role management (admin panel)
+- ⚡ REST API backend (Express)
+- 🎯 Clean and responsive UI (React + Tailwind)
+- 🌐 Full-stack deployment (Vercel + Render)
 
-🔥 Future Improvements
-WebSocket real-time updates
-Device management panel
-Notifications & alerts
-Charts & analytics (Chart.js / Recharts)
-Role-based access control (RBAC upgrade)
+---
 
-💼 Why This Project Matters
+## 🧠 What I Built & Learned
+
+- Designed full frontend architecture with React (Vite)
+- Built REST API with Express & PostgreSQL
+- Implemented authentication flow (JWT)
+
+### Solved real-world issues:
+- CORS problems in production
+- API routing & proxy issues
+- Deployment mismatches (frontend/backend)
+- Environment variable handling
+
+- Integrated IoT-style data flow (sensor → API → UI)
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Axios
+- React Router
+
+### Backend
+- Node.js
+- Express.js
+- PostgreSQL
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
+
+---
+
+## 🔥 Future Improvements
+
+- WebSocket real-time updates
+- Device management panel
+- Notifications & alerts
+- Charts & analytics (Chart.js / Recharts)
+- Role-based access control (RBAC upgrade)
+
+---
+
+## 💼 Why This Project Matters
+
 This project demonstrates:
- Full-stack development skills
- Real-world problem solving
- Deployment & DevOps basics
- Understanding of IoT systems
 
- 👤 Author
+- Full-stack development skills
+- Real-world problem solving
+- Deployment & DevOps basics
+- Understanding of IoT systems
 
-Marko Bjelica
+---
+
+## 👤 Author
+
+**Marko Bjelica**
 
 GitHub: https://github.com/MarkoBjelica98
 
-⭐ Show your support
+---
+
+## ⭐ Show your support
 
 If you like this project:
 
-⭐ Star the repo
-🍴 Fork it
-🧠 Use it as inspiration
+- ⭐ Star the repo
+- 🍴 Fork it
+- 🧠 Use it as inspiration
